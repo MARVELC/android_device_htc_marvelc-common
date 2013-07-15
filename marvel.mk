@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
     sensors.msm7x27 \
     lights.marvel
 
+# dirty hack
+PRODUCT_COPY_FILES += \
+    device/htc/marvelc-common/sdcard:system/etc/init.d/sdcard 
+    
 ### System properties
 
 # RIL
